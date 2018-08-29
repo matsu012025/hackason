@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   Foundation
+   ========================================================================== */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}img,legend{border:0}legend,td,th{padding:0}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}ol,ul{list-style:none}dl,ol,p,ul{margin:0;padding:0}h2{margin:0}iframe{border:none}
+h1,h3,h4{margin:0}button{ background-color: transparent; border: none; padding:0; white-space: nowrap;}
+
+
+/* Base
+   ----------------------------------------------------------------- */
+
+body, html {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+	color: #666;
+	line-height: 1.8em;
+	letter-spacing: 0.12em;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: #333;
+}
+*{box-sizing: border-box;}
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+   Object
+   ========================================================================== */
+
+/* Component
+   ----------------------------------------------------------------- */
+
+
+
+
+
+
+/* Project
+   ----------------------------------------------------------------- */
+
+
+
+/* Utility
+   ----------------------------------------------------------------- */
+.font-10 {font-size:10px;}
+.font-12 {font-size:12px;}
+.font-14 {font-size:14px;}
+.font-16 {font-size:16px;}
+.font-18 {font-size:18px;}
+.font-20 {font-size:18px;}
+.font_a5a5a5{color:#a5a5a5;}
+.bold{font-weight: bold;}
+.txt-center {text-align:center;
+display: block;}
+.mgn-t10{margin-top: 10px;}
+.border-bottom{
+	border-bottom: solid 1px #ccc;
+}
+
+.pd-t-10{
+    padding-top: 10px;
+}
+.g_myotyo{
+				font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+				letter-spacing: 0.1em;
+    line-height: 1.625;
+}
+.pd-r-10{
+		padding-right:10px;
+}
+.pd-l-10{
+		padding-left:10px;
+}
+.pd-r-20{
+		padding-right:20px;
+}
+.pd-l-20{
+		padding-left:20px;
+}
+@media screen and (min-width: 1000px){
+	.bottom_fix_wrap{
+		position: relative;
+		padding-bottom: 270px;
+	}
+	.bottom_fix{
+		position:absolute;
+		bottom:0;
+	}
+}
+@media screen and (min-width: 1100px){.bottom_fix_wrap{padding-bottom: 290px;}}
+@media screen and (min-width: 1200px){.bottom_fix_wrap{padding-bottom: 320px;}}
+@media screen and (min-width: 1300px){.bottom_fix_wrap{padding-bottom: 350px;}}
+.maxWidth{
+	max-width:980px;
+	margin: auto;
+}
+/* -- grid -- */
+.grid {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.grid_item {
+	display:inline-block;
+	width: 100%;
+	letter-spacing: 0;
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position:relative;
+}
+.grid_item_inner {
+	height:100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid_item-1,.grid_item-2,.grid_item-3,.grid_item-4,.grid_item-5 ,.grid_item-s1,.grid_item-s2,.grid_item-s3,.grid_item-s4,.grid_item-s5{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.grid_item-1 {width:100%}
+.grid_item-2 {width:50%}
+.grid_item-3 {width:33.3333%}
+.grid_item-4 {width:25%}
+.grid_item-5 {width:20%;}
+@media screen and (max-width: 999px){
+.grid_item-s1 {width:100%}
+.grid_item-s2 {width:50%}
+.grid_item-s3 {width:33.3333%}
+.grid_item-s4 {width:25%}
+.grid_item-s5 {width:20%;}
+}
+/* -- flexbox -- */
+.flexbox {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.flex_v-center{
+	align-items: center;
+	-webkit-align-items:center;
+}
+.flex_wrap{
+	flex-wrap: wrap;
+}
+.flex_just-bet{
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.flex_align-strech{
+    align-items: stretch;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+
+
