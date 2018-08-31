@@ -215,6 +215,64 @@ span.btnArea__btn__1s{
 .is_lesson span.btnArea__btn__1s{
     display: block;
 }
+.textArea{
+    padding: 10px;
+}
+.textArea__box{
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    min-height: 3.5em; 
+    transition: .3s;
+    z-index: 100;
+}
+.textArea::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    right: 10%;
+    border-bottom: solid 3em #fff;
+    border-right: solid 2em transparent;
+    border-left: solid 2em transparent; 
+    -webkit-transform:skew(40deg, 20deg);
+    transform:skew(40deg, 20deg);
+    z-index: 0;
+}
+.is_lesson .textArea__box{
+    min-height: 8em;
+}
+.imgArea.grid_item{
+    width: 49%;
+    padding: 10px 0 10px 10px;
+}
+.imgArea__imgWrap{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 8em;
+}
+.emotionArea.grid_item{
+    width:49%;
+    padding: 10px;
+    color:#fff;
+    font-weight: bold;
+}
+.emotionArea__p{
+
+}
+@media screen and (min-width: 571px){
+    .imgArea.grid_item{
+        width: 100%;
+    }
+    .emotionArea.grid_item{
+        width:100%;
+    }
+}
+
 /* Project
    ----------------------------------------------------------------- */
 
