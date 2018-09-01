@@ -39,6 +39,7 @@ a:link, a:visited {
 }
 
 .btnArea{
+    margin-top: 20px;
     z-index: 0;
 }
 
@@ -173,7 +174,7 @@ a:link, a:visited {
     width: 6em;
     height: 6em;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto 10px;
     text-decoration: none;
     color: #ff5c5c;/*アイコン色*/
     line-height: 80px;
@@ -215,10 +216,22 @@ span.btnArea__btn__1s{
 .is_lesson span.btnArea__btn__1s{
     display: block;
 }
+.btnArea__btn__msg{
+    font-size: 12px;
+    margin: 0 auto 10px;
+    width: 8em;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+}
+.is_lesson .btnArea__btn__msg{
+    display: block;
+}
 .textArea{
     padding: 10px;
 }
 .textArea__box{
+    font-size: 14px;
     position: relative;
     padding: 10px;
     background-color: #fff;
@@ -267,6 +280,7 @@ span.btnArea__btn__1s{
 @media screen and (min-width: 571px){
     .imgArea.grid_item{
         width: 100%;
+        padding: 10px 10px 10px 10px;
     }
     .emotionArea.grid_item{
         width:100%;
@@ -275,7 +289,37 @@ span.btnArea__btn__1s{
 
 /* Project
    ----------------------------------------------------------------- */
+.is_lesson .pulse {
+  cursor: pointer;
+  box-shadow: 0 0 0 rgb(255, 0, 0);
+  animation: pulse 2s infinite;
+}
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(214, 214, 214, 1);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204, 204, 204, 0);
+      box-shadow: 0 0 0 10px rgba(204, 204, 204, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204, 204, 204, 0);
+      box-shadow: 0 0 0 0 rgba(204, 204, 204, 0);
+  }
+}
 
 
 /* Utility
@@ -376,6 +420,8 @@ display: block;}
     align-items: stretch;
 }
 .wf-nicomoji { font-family: "Nico Moji"; }
+
+
 /* ==========================================
 Single-colored icons can be modified like so:
 .icon-name {
