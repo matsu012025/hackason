@@ -39,10 +39,13 @@ a:link, a:visited {
 }
 
 .btnArea{
-    margin-top: 20px;
+    margin-top: 12px;
     z-index: 0;
 }
-
+.contents_wrap{
+    max-width: 800px;
+    margin: auto;
+}
 
 
 /* ==========================================================================
@@ -52,7 +55,7 @@ a:link, a:visited {
 /* Component
    ----------------------------------------------------------------- */
 .header__tit{
-    padding: 10px;
+    padding: 6px;
     font-size: 40px;
     color:yellow;
     text-align: center;
@@ -61,18 +64,18 @@ a:link, a:visited {
 .header__subtit{
     color: #fff;
     text-align: center;
-    font-size: 16px;
-    padding: 5px;
+    font-size: 13px;
+    padding: 0;
 }
 .header__lang{
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
     top:10px;
     left:10px;
     background-color: aliceblue;
     border-radius: 5px;
     text-align: center;
-    padding: 10px 10px 0 10px;
+    padding: 5px 5px 0 5px;
     width: 10em;
     z-index: 0;
 }
@@ -80,18 +83,18 @@ a:link, a:visited {
     .header__lang{
         position: static;
         margin: auto;
-        margin-top:10px; 
+        margin-top:5px; 
     }
 }
 .header__lang__crnt{
-    padding: 0 10px 10px 10px;
+    padding: 0 5px 5px 5px;
     color:dodgerblue;
     font-weight: bold;
 }
 .header__lang__listItem:first-child{
 }
 .header__lang__listItem{
-    padding: 10px;
+    padding: 5px;
     border-top: solid 1px #ccc;
     display: none;
     color:#82c3d6;
@@ -208,6 +211,7 @@ span.btnArea__btn__1s{
 }
 .is_lesson .btnArea__btn{
     font-size: 16px;
+    margin: 0 auto 4px;
 }
 .is_lesson span.btnArea__btn__1{
     display: none;
@@ -227,17 +231,18 @@ span.btnArea__btn__1s{
     display: block;
 }
 .textArea{
-    padding: 10px;
+    padding: 15px;
 }
 .textArea__box{
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     padding: 10px;
     background-color: #fff;
     border-radius: 10px;
-    min-height: 3.5em; 
+    height: 10em; 
     transition: .3s;
     z-index: 100;
+    overflow-y: scroll;
 }
 .textArea::after{
     content: '';
@@ -246,26 +251,27 @@ span.btnArea__btn__1s{
     height: 0;
     position: absolute;
     top: -10px;
-    right: 10%;
+    left: 20%;
     border-bottom: solid 3em #fff;
     border-right: solid 2em transparent;
     border-left: solid 2em transparent; 
-    -webkit-transform:skew(40deg, 20deg);
-    transform:skew(40deg, 20deg);
+    -webkit-transform: skew(-51deg, -6deg);
+    transform: skew(-51deg, -6deg);
     z-index: 0;
 }
 .is_lesson .textArea__box{
-    min-height: 12em;
+    color:;
 }
 .imgArea.grid_item{
-    width: 49%;
-    padding: 10px 0 10px 10px;
+    width: 100%;
+    padding: 0 15px 10px 15px;
 }
 .imgArea__imgWrap{
+    font-size: 16px;
     padding: 10px;
     background-color: #fff;
     border-radius: 10px;
-    height: 8em;
+    height: 10em;
 }
 .emotionArea.grid_item{
     width:49%;
@@ -279,10 +285,28 @@ span.btnArea__btn__1s{
 @media screen and (min-width: 571px){
     .imgArea.grid_item{
         width: 100%;
-        padding: 10px 10px 10px 10px;
+        padding: 15px 10px 10px 10px;
     }
     .emotionArea.grid_item{
         width:100%;
+    }
+}
+@media screen and (min-width: 571px){
+    .header__tit{
+        font-size: 50px;
+        padding: 16px;
+    }
+    .btnArea__btn{
+        font-size: 38px;
+    }
+    .is_lesson .btnArea__btn{
+        font-size: 30px;
+    }
+    .textArea__box{
+        height: 20em;
+    }
+    .imgArea__imgWrap{
+        height: 20em;
     }
 }
 
@@ -290,7 +314,7 @@ span.btnArea__btn__1s{
    ----------------------------------------------------------------- */
 .is_lesson .pulse {
   box-shadow: 0 0 0 rgb(255, 0, 0);
-  animation: pulse 2s infinite;
+  animation: pulse 1s infinite;
 }
 
 @-webkit-keyframes pulse {
@@ -341,11 +365,6 @@ display: block;}
 
 .pd-t-10{
     padding-top: 10px;
-}
-.g_myotyo{
-				font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-				letter-spacing: 0.1em;
-    line-height: 1.625;
 }
 .pd-r-10{
 		padding-right:10px;
