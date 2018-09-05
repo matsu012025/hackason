@@ -3,27 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>シュワッチャ：聴覚障害者補助用WEBアプリ</title>
+		<title>シュワッチャ：聴覚障がい者補助用WEBアプリ</title>
 		<meta name="description" content="聴覚障害者補助用WEBアプリ「シュワッチャ」">
 		<meta name="keywords" content="聴覚障害,アプリ,シュワッチャ,会議,テキスト化">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/style.css?0003">
+		<link rel="stylesheet" href="css/style.css?0005">
         <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
 		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/script.js?0003"></script>
+        <script src="js/swiper.js"></script>
+		<script src="js/script.js?0005"></script>
 	</head>
 	<body>
         <header class="header">
             <h1 class="header__tit wf-nicomoji">シュワッチャ</h1>
-            <p class="header__subtit">聴覚障害者補助用WEBアプリ</p>
-            <!--<div class="header__lang">
-                <p class="header__lang__crnt">日本語</p>
-                <ul class="header__lang__list">
-                    <li class="header__lang__listItem">日本語</li>
-                    <li class="header__lang__listItem">English</li>
-                    <li class="header__lang__listItem">Chinese</li>
-                </ul>
-            </div>-->
+            <p class="header__subtit">聴覚障がい者補助用WEBアプリ</p>
+    
             <div class="header__hbgnav">
                 <span></span>
                 <span></span>
@@ -32,6 +26,14 @@
                 <li class="header__navList">使い方</li>
                 <li class="header__navList">お問い合わせ</li>
                 <li class="header__navList">クレジット</li>
+                <li class="header__lang">
+                    <p class="header__lang__crnt arrow">日本語</p>
+                    <ul class="header__lang__list">
+                        <li class="header__lang__listItem">日本語</li>
+                        <li class="header__lang__listItem">English</li>
+                        <li class="header__lang__listItem">Chinese</li>
+                    </ul>
+                </li>
             </ul>
             <div class="header__mask"></div>           
         </header>
@@ -49,7 +51,24 @@
                 </div>
                 <div class="grid_item-2 grid_item grid_item-s1 grid">
                     <div class="imgArea grid_item">
-                        <div class="imgArea__imgWrap">画像エリア（手話）</div>
+                        <div class="imgArea__imgWrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                    <div class="swiper-slide swiper__photoItem"><img src="img/img01.jpg"></div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                     </div>
                     <!--<div class="emotionArea grid_item">
                         <div class="emotionArea__tit">感情のパラメータ</div>

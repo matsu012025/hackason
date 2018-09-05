@@ -27,5 +27,19 @@ $(function(){
     //listenmode
     $('.btnArea__btn').on('click',function(){
         $('body').toggleClass('is_lesson');
+        swiper.update();
+    });
+    
+    //swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
     });
 })
