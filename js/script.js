@@ -1,6 +1,6 @@
 $(function(){
     //ハンバーガー
-    $('.header__hbgnav').on('click',function(){
+    $('.header__hbgnav,.header__mask').on('click',function(){
         $('body').toggleClass('is_hbgOpen');
     });
     
@@ -13,7 +13,11 @@ $(function(){
         checkCrntMenu();
     });
     $langListItem.on('click',function(){
-        $langCrnt.text($(this).text());
+        var $this = $(this);
+        $('html').removeClass();
+        $langCrnt.text($this.text());
+        $langCrnt.data('crntLang',$this.data('lang'));
+        $('html').toggleClass($this.data('lang'));
     });
     function checkCrntMenu(){
         $langListItem.each(function(){
@@ -27,19 +31,5 @@ $(function(){
     //listenmode
     $('.btnArea__btn').on('click',function(){
         $('body').toggleClass('is_lesson');
-        swiper.update();
-    });
-    
-    //swiper
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-      },
     });
 })

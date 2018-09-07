@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="ja">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +7,32 @@
 		<meta name="description" content="聴覚障害者補助用WEBアプリ「シュワッチャ」">
 		<meta name="keywords" content="聴覚障害,アプリ,シュワッチャ,会議,テキスト化">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/style.css?0014">
+		<link rel="stylesheet" href="css/style.css?0016">
         <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
 		<script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/swiper.js"></script>
-		<script src="js/script.js?0005"></script>
+		<script src="js/script.js?0007"></script>
 	</head>
 	<body>
         <header class="header">
-            <h1 class="header__tit wf-nicomoji">シュワッチャ</h1>
-            <p class="header__subtit">聴覚障がい者補助用WEBアプリ</p>
+            <h1 class="header__tit wf-nicomoji japanese">シュワッチャ</h1>
+            <h1 class="header__tit wf-nicomoji english">ShuWaCha</h1>
+            <p class="header__subtit japanese">聴覚障がい者補助用WEBアプリ</p>
+            <p class="header__subtit english">SUPPORTING SYSTEM FOR PERSON HAVING DIFFICULTY IN HEARING</p>
     
             <div class="header__hbgnav">
                 <span></span>
                 <span></span>
             </div>
             <ul class="haeder__nav">
-                <li class="header__navList">使い方</li>
-                <li class="header__navList">お問い合わせ</li>
-                <li class="header__navList">クレジット</li>
+                <li class="header__navList japanese">使い方</li>
+                <li class="header__navList english">HOW TO</li>
+                <li class="header__navList japanese">お問い合わせ</li>
+                <li class="header__navList english">MAIL</li>
                 <li class="header__lang">
                     <p class="header__lang__crnt arrow">日本語</p>
                     <ul class="header__lang__list">
-                        <li class="header__lang__listItem">日本語</li>
-                        <li class="header__lang__listItem">English</li>
-                        <li class="header__lang__listItem">Chinese</li>
+                        <li class="header__lang__listItem" data-lang="ja">日本語</li>
+                        <li class="header__lang__listItem" data-lang="en">English</li>
                     </ul>
                 </li>
             </ul>
@@ -40,10 +41,13 @@
         <div class="contents_wrap">
             <div class="btnArea">
                 <div class="btnArea__btn pulse">
-                    <span class="btnArea__btn__1">聞く</span>
-                    <span class="btnArea__btn__1s">終了</span>
+                    <span class="btnArea__btn__txt on japanese">始める</span>
+                    <span class="btnArea__btn__txt off japanese">終了</span>
+                    <span class="btnArea__btn__txt on english">START</span>
+                    <span class="btnArea__btn__txt off english">STOP</span>
                 </div>
-                <div class="btnArea__btn__msg">聞き取り中...</div>
+                <div class="btnArea__btn__msg japanese">聞き取り中...</div>
+                <div class="btnArea__btn__msg english">listening...</div>
             </div>
             <div class="grid">
                 <div class="textArea grid_item-2 grid_item grid_item-s1">
@@ -51,20 +55,7 @@
                 </div>
                 <div class="grid_item-2 grid_item grid_item-s1 grid">
                     <div class="imgArea grid_item">
-                        <div class="imgArea__imgWrap">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper__photoItem"><p class="imgArea__cap">こんにちは。</p><img src="img/img01.jpg"></div>
-                                    <div class="swiper-slide swiper__photoItem"><p class="imgArea__cap">こんにちは。</p><img src="img/img01.jpg"></div>
-                                    <div class="swiper-slide swiper__photoItem"><p class="imgArea__cap">こんにちは。</p><img src="img/img01.jpg"></div>
-                                    <div class="swiper-slide swiper__photoItem"><p class="imgArea__cap">こんにちは。</p><img src="img/img01.jpg"></div>
-                                    <div class="swiper-slide swiper__photoItem"><p class="imgArea__cap">こんにちは。</p><img src="img/img01.jpg"></div>
-                                    <div class="swiper-slide swiper__photoItem"><p class="imgArea__cap">こんにちは。</p><img src="img/img01.jpg"></div>
-                                </div>
-                                <!-- Add Pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
+                        <div class="imgArea__imgWrap">画像エリア（手話）</div>
                     </div>
                     <!--<div class="emotionArea grid_item">
                         <div class="emotionArea__tit">感情のパラメータ</div>
