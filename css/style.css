@@ -296,8 +296,11 @@ a:link, a:visited {
     height: 12em;
     overflow: hidden;
     position: relative;
-    background-color: #fff;
+    background-color:#000;
     border-radius: 10px;
+}
+.imgArea__imgWrap img{
+    width:100%;
 }
 
 .emotionArea.grid_item{
